@@ -68,3 +68,8 @@ const buttonAllOperatorElements = document.querySelectorAll('.button.operator');
 /*----------------------------- Event Listeners -----------------------------*/
 
 /*-------------------------------- Functions --------------------------------*/
+
+//if (text !== "+" && text !== "-" && text !== "*" && text !== "/" && 
+// text !== "=" && text !== "C") {
+  // must be a number
+// }
