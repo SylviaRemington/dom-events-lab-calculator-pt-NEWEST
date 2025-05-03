@@ -74,8 +74,11 @@ One to keep the number being typed
 
 MY NOTES/REALIZATIONS... phew finally:
 So this is saving the "listening for clicks"
-And this is saving the value?
+And this is saving the value
 */
+
+let number = ''; //And this is saving the value so that the computer can use an operator afterthis
+
 
 /*------------------------ Cached Element References ------------------------*/
 
