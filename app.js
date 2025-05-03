@@ -73,3 +73,5 @@ const buttonAllOperatorElements = document.querySelectorAll('.button.operator');
 // text !== "=" && text !== "C") {
   // must be a number
 // }
+
+//if button number === 'C', then make display null..or zero... whatever is best.
