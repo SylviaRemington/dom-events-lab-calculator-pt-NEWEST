@@ -67,6 +67,66 @@ const buttonAllOperatorElements = document.querySelectorAll('.button.operator');
 
 /*----------------------------- Event Listeners -----------------------------*/
 
+//Event listeners to come (to be announced soon! Preview of coming attractions! :)
+
+/*Here's some ideas:
+I would need to use innerText and the parse thing that converts the numbers to let calculator know they are numbers
+🔹 First: Use innerText
+To get the number from the button.
+
+This gives you the number as text — like "7" (with quotes, meaning it’s a string).
+
+🔹 Then: Use a converter
+Like the parse method.
+
+To turn that text into a real number — like 7 (as a number, not just characters).
+
+This way, you can use the number for math later (like adding or multiplying), not just display it.
+
+Can both of those things be in the same function?
+
+
+ChatGPT said:
+✅ Yes — both of those steps can absolutely be in the same function.
+
+In fact, it’s very common to:
+
+Get the text from the button,
+
+Convert it into a number,
+
+And then use it (like show it on the screen or store it),
+
+all in one place.
+
+Think of it like one action:
+
+“When the user clicks, figure out the number and do something with it.”
+
+
+So it could be a function inside of an Event Listener?
+
+
+ChatGPT said:
+✅ Yes — exactly.
+
+That’s how it’s usually done:
+
+The event listener waits for the click.
+
+When the click happens, it runs a function.
+
+Inside that function, you can:
+
+Get the text from the button (like "7")
+
+Convert it into a number
+
+Show it on the display or store it for a calculation
+
+So yes — the function that handles all of that can live inside the event listener.
+*/
+
 /*-------------------------------- Functions --------------------------------*/
 
 //if (text !== "+" && text !== "-" && text !== "*" && text !== "/" && 
