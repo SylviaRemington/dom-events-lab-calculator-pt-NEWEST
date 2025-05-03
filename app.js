@@ -49,6 +49,34 @@ As a user, I want to be able to clear all operations and start from 0.
 
 /*-------------------------------- Variables --------------------------------*/
 
+/*Notes for me on why we need these two things and how they are different:
+FROM CHAT GPT
+🔹 const buttonElement = ...
+This saves the buttons themselves — the things the user clicks.
+
+It’s like saying:
+“Here are the physical keys on the calculator.”
+You can now listen to when someone clicks one of those keys.
+
+🔸 let number = ''
+This saves the value the user is typing — the number that’s being built.
+It’s like saying:
+“Here’s the typed-in number so far.”
+
+🔁 So:
+The first one saves the buttons
+The second one saves the input the user is creating
+
+THIS IS THE INFORMATION I NEEDED BELOW:
+You need both:
+One to detect clicks
+One to keep the number being typed
+
+MY NOTES/REALIZATIONS... phew finally:
+So this is saving the "listening for clicks"
+And this is saving the value?
+*/
+
 /*------------------------ Cached Element References ------------------------*/
 
 const calculatorElement = document.querySelector('#calculator');
