@@ -78,7 +78,9 @@ And this is saving the value
 */
 
 let number = ''; //And this is saving the value so that the computer can use an operator afterthis
-
+let operator = '';
+let equals = '';
+// let clear = clear
 
 /*------------------------ Cached Element References ------------------------*/
 
