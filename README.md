@@ -165,3 +165,32 @@ It doesn’t guess.
 It doesn’t know what a number is unless you check it.
 It doesn’t do math unless you say when and how.
 
+-----------------------------------------------------------------------
+
+CALCULATOR PSEUDOCODE — SIMPLE FUNCTIONALITY
+1. Set up the calculator screen
+Create a display area to show numbers and results
+
+2. When a number button is clicked:
+Get the number from the button
+Add that number to the current number being typed
+Show the updated number in the display
+
+3. When an operator button (+, –, ×, ÷) is clicked:
+Save the current number as the first number
+Save the operator that was clicked
+Clear or prepare the display for the second number
+
+4. When another number button is clicked (after operator):
+Start building the second number
+Show it in the display as it’s typed
+
+5. When the equals (=) button is clicked:
+Use the first number, the operator, and the second number
+Do the calculation
+Show the result in the display
+
+6. When the clear (C) button is clicked:
+Empty the display
+Clear both saved numbers and the operator
+
