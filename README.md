@@ -115,3 +115,53 @@ Understand button roles: Remember, each calculator button serves a specific purp
 
 Happy coding! 🎉
 
+--------------------------------------------------------
+
+NOTES ON HOW A COMPUTER THINKS ...so that I better understand how to communicate with it.
+
+🧠 How the computer thinks through a calculator:
+🔹 Step 1:
+“I’m ready. I’m watching. I’m waiting for someone to click anything.”
+
+🔹 Step 2:
+“A button was clicked. Let me check what’s written inside that button.”
+
+🔹 Step 3:
+“What kind of button was it?”
+
+If the button says a number (like 3, 6, 9):
+
+“I’ll add that to whatever number is being typed right now. I’ll show it in the display.”
+
+If the button is an operator (+, –, ×, ÷):
+
+“I’ll save the number the user just typed as the first number.”
+“I’ll save the operator too, so I know what kind of math to do.”
+
+If the button says “=”:
+
+“Now I’ll take the first number, the operator, and the second number, and do the math.”
+“Then I’ll show the answer in the display.”
+
+If the button says “C”:
+
+“Clear everything. Start over. Empty the display and forget the numbers and operator.”
+
+🔹 Step 4:
+“Go back to waiting. Ready for the next button click.”
+
+💬 The computer only knows:
+What button was clicked
+
+What text was inside that button
+
+What you told it to remember
+
+What you told it to show
+
+That’s it.
+
+It doesn’t guess.
+It doesn’t know what a number is unless you check it.
+It doesn’t do math unless you say when and how.
+
