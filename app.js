@@ -1,3 +1,5 @@
+//DOM EVENTS CALCULATOR LAB - newest rendition from scratch after re-reviewing all JS materials from class.
+
 /*
 
 User Stories for this lab:
