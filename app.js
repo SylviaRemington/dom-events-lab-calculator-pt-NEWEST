@@ -87,15 +87,25 @@ let equals = '';
 /*------------------------ Cached Element References ------------------------*/
 
 const calculatorElement = document.querySelector('#calculator');
+console.log(calculatorElement);
 const displayElement = document.querySelector('.display');
+console.log(displayElement);
 const buttonElement = document.querySelectorAll('.button');
+console.log(buttonElement);
 const numberElement = document.querySelectorAll('.number');
+console.log(numberElement);
 const operatorElement = document.querySelector('.operator');
+console.log(operatorElement);
 const equalsElement = document.querySelector('.equals');
+console.log(equalsElement);
 const buttonNumberElement = document.querySelector('.button.number');
+console.log(buttonNumberElement);
 const buttonAllNumberElements = document.querySelectorAll('.button.number');
+console.log(buttonAllNumberElements);
 const buttonOperatorElement = document.querySelector('.button.operator');
+console.log(buttonAllOperatorElements);
 const buttonAllOperatorElements = document.querySelectorAll('.button.operator');
+console.log(buttonAllOperatorElements);
 
 
 
