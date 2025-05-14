@@ -162,6 +162,11 @@ Show it on the display or store it for a calculation
 So yes — the function that handles all of that can live inside the event listener.
 */
 
+button.addEventListener("click", function() {
+  console.log("Button Clicked!");
+  //innerText to read the content of an element - create a const or let about innerText
+});
+
 /*-------------------------------- Functions --------------------------------*/
 
 //if (text !== "+" && text !== "-" && text !== "*" && text !== "/" && 
