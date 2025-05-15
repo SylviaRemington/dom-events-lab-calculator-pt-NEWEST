@@ -1,5 +1,96 @@
 //DOM EVENTS CALCULATOR LAB - newest rendition from scratch after re-reviewing all JS materials from class.
 
+// Get calculator elements
+const display = document.querySelector('.display');
+const numberButtons = document.querySelectorAll('.number');
+const operatorButtons = document.querySelectorAll('.operator');
+const equalsButton = document.querySelector('.equals');
+
+// Calculator state variables
+let currentNumber = '';      // Stores what's being typed right now
+let firstNumber = null;      // Stores first number when operator is pressed
+let operation = null;        // Stores which operation (+, -, etc.) was pressed
+
+// Number buttons (0-9)
+numberButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    currentNumber += button.textContent;
+    display.textContent = currentNumber;
+  });
+});
+
+// Operator buttons (+, -, *, /, C)
+operatorButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    if (button.textContent === 'C') {
+      // Clear everything
+      currentNumber = '';
+      firstNumber = null;
+      operation = null;
+      display.textContent = '0';
+      return;
+    }
+    
+    if (currentNumber !== '') {
+      firstNumber = parseFloat(currentNumber);
+      operation = button.textContent;
+      currentNumber = ''; // Clear immediately after operator press
+    }
+  });
+});
+
+// Equals button
+equalsButton.addEventListener('click', () => {
+  if (operation === null || firstNumber === null || currentNumber === '') return;
+  
+  const secondNumber = parseFloat(currentNumber);
+  let result;
+  
+  switch (operation) {
+    case '+': result = firstNumber + secondNumber; break;
+    case '-': result = firstNumber - secondNumber; break;
+    case '*': result = firstNumber * secondNumber; break;
+    case '/': result = firstNumber / secondNumber; break;
+  }
+  
+  display.textContent = result;
+  currentNumber = result.toString();
+  firstNumber = null;
+  operation = null;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 User Stories for this lab:
@@ -79,33 +170,33 @@ So this is saving the "listening for clicks"
 And this is saving the value
 */
 
-let number = ''; //And this is saving the value so that the computer can use an operator afterthis
-let operator = '';
-let equals = '';
-// let clear = clear
+// let number = ''; //And this is saving the value so that the computer can use an operator afterthis
+// let operator = '';
+// let equals = '';
+// // let clear = clear
 
 /*------------------------ Cached Element References ------------------------*/
 
-const calculatorElement = document.querySelector('#calculator');
-console.log(calculatorElement);
-const displayElement = document.querySelector('.display');
-console.log(displayElement);
-const buttonElement = document.querySelectorAll('.button');
-console.log(buttonElement);
-const numberElement = document.querySelectorAll('.number');
-console.log(numberElement);
-const operatorElement = document.querySelector('.operator');
-console.log(operatorElement);
-const equalsElement = document.querySelector('.equals');
-console.log(equalsElement);
-const buttonNumberElement = document.querySelector('.button.number');
-console.log(buttonNumberElement);
-const buttonAllNumberElements = document.querySelectorAll('.button.number');
-console.log(buttonAllNumberElements);
-const buttonOperatorElement = document.querySelector('.button.operator');
-console.log(buttonAllOperatorElements);
-const buttonAllOperatorElements = document.querySelectorAll('.button.operator');
-console.log(buttonAllOperatorElements);
+// const calculatorElement = document.querySelector('#calculator');
+// console.log(calculatorElement);
+// const displayElement = document.querySelector('.display');
+// console.log(displayElement);
+// const buttonElement = document.querySelectorAll('.button');
+// console.log(buttonElement);
+// const numberElement = document.querySelectorAll('.number');
+// console.log(numberElement);
+// const operatorElement = document.querySelector('.operator');
+// console.log(operatorElement);
+// const equalsElement = document.querySelector('.equals');
+// console.log(equalsElement);
+// const buttonNumberElement = document.querySelector('.button.number');
+// console.log(buttonNumberElement);
+// const buttonAllNumberElements = document.querySelectorAll('.button.number');
+// console.log(buttonAllNumberElements);
+// const buttonOperatorElement = document.querySelector('.button.operator');
+// console.log(buttonOperatorElement);
+// const buttonAllOperatorElements = document.querySelectorAll('.button.operator');
+// console.log(buttonAllOperatorElements);
 
 
 
@@ -172,10 +263,10 @@ Show it on the display or store it for a calculation
 So yes — the function that handles all of that can live inside the event listener.
 */
 
-button.addEventListener("click", function() {
-  console.log("Button Clicked!");
-  //innerText to read the content of an element - create a const or let about innerText
-});
+// button.addEventListener("click", function() {
+//   console.log("Button Clicked!");
+//   //innerText to read the content of an element - create a const or let about innerText
+// });
 
 /*-------------------------------- Functions --------------------------------*/
 
