@@ -74,23 +74,7 @@ equalsButton.addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Code Graveyard -- old notes, old attempts at coding this and different versions
 
 /*
 
