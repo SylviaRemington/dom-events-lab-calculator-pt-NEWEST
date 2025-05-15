@@ -1,4 +1,5 @@
 //DOM EVENTS CALCULATOR LAB - newest rendition from scratch after re-reviewing all JS materials from class.
+// Done!!! :)
 
 // Get calculator elements
 const display = document.querySelector('.display');
